@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html>
+
+    <head>
+        <title>Rango Again</title>
+    </head>
+
+    <body>
+        <h1>Rango again says...</h1>
+
+        <div>
+            hey there again! <br />
+            <strong>{{ italicmessage }}</strong><br />
+        </div>
+
+        <div>
+            <a href="/rango/about/">About</a><br />
+            <img src="{% static 'rango2.jpg' %}" alt="Another picture of Rango" /> <!-- New line -->
+            <img src="{{ MEDIA_URL }}rango3.jpg" alt="Picture 3 of Rango."/>
+        </div>
+    </body>
+    
+</html>
